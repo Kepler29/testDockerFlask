@@ -4,6 +4,10 @@ pipeline {
         githubPush()
     }
     stages {
-        stage('forst Test') {}
+        stage('first Test') {
+            steps {
+                sh ''' hpla'''
+            }
+        }
     }
 }
