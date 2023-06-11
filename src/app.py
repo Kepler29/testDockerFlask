@@ -12,5 +12,9 @@ def helloWorld():
 def test1():
   return jsonify({"response": "sihiuiente link"})
 
+@app.route("/link2")
+def test1():
+  return jsonify({"response": "sihiuiente link 2"})
+
 if __name__ == '__main__':
   app.run(host="0.0.0.0", port=4000)
