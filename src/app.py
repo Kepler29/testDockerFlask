@@ -16,5 +16,9 @@ def test1():
 def test1():
   return jsonify({"response": "sihiuiente link 2"})
 
+@app.route("/link3")
+def test1():
+  return jsonify({"response": "sihiuiente link 3"})
+
 if __name__ == '__main__':
   app.run(host="0.0.0.0", port=4000)
