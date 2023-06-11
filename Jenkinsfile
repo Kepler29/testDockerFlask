@@ -6,7 +6,10 @@ pipeline {
     stages {
         stage('first Test') {
             steps {
-                sh ''' hpla'''
+                sh '''
+                    #!/bin/bash
+                    docker run -it -p 4000:4000 -d flaskapp
+                '''
             }
         }
     }
